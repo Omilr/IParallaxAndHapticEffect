@@ -12,9 +12,9 @@ Pod::Spec.new do |s|
   s.summary          = '✨ Super easy Parallax and Haptic Effect.'
   s.description      = <<-DESC
 
-✨ This library can be used for easy use of 'Parallax' and 'Haptic' effects.
-Custom 3D Parallax and Haptic effect are provided.
-It is easy to create an interactive UX/UI with excellent performance.
+✨ This library helps you easily use the 'Parallax' and 'Haptic' effects.
+Customized 3D parallax and haptic effects are provided.
+It is easy to create high-performance interactive UX/UI.
                        DESC
 
   s.homepage         = 'https://github.com/Omilr/IParallaxAndHapticEffect'
