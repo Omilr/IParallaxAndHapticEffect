@@ -194,6 +194,15 @@ IParallaxAndHapticEffect is available through CocoaPods. To install it, simply a
 pod 'IParallaxAndHapticEffect'
 ```
 
+### Swift Package Manager
+
+Project settings > Package Dependencies > '+' Button > GitHub URL > Add Package <br/>
+Alternatively, File > Add Packages > Add Package Dependencies.
+
+```ruby
+https://github.com/Omilr/IParallaxAndHapticEffect.git
+```
+
 <br/>
 
 ## ⚠️ Important <a name="important"></a>
