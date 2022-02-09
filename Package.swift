@@ -17,6 +17,6 @@ let package = Package(
     ],
     targets: [
         .target(name: "IParallaxAndHapticEffect",
-                path: "Sources/IParallaxAndHapticEffect")
+                path: "Sources/IParallaxAndHapticEffect/")
     ]
 )
