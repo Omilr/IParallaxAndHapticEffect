@@ -92,6 +92,12 @@ Here's the recommended intensity!
 <br/>
 
 ## 🚀 How to use IHapticEffect <a name="how-to-use-ihaptic"></a>
+First of all, you will need to import the IParallaxAndHapticEffect module.
+
+```swift
+import IParallaxAndHapticEffect
+```
+
 `IHapticEffect` basically provides all nine forms of system vibration. <br/>
 Additionally, try other excellent vibration functions.
 
