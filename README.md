@@ -1,10 +1,10 @@
 ![IParallaxAndHapticEffectMain](https://user-images.githubusercontent.com/81509766/153163501-09b616cc-0174-4699-be8e-88946da40255.png)
 
 # IParallaxAndHapticEffect
-✨ Super easy Parallax and Haptic Effect.
+✨ Super easy Parallax and Haptic Effect. <br/>
 This library helps you easily use the 'Parallax' and 'Haptic' effects. <br/>
-Customized 3D parallax and haptic effects are provided.
-It is easy to create high-performance interactive UX/UI.
+Customized 3D parallax and haptic effects are provided. <br/>
+It is easy to create high-performance interactive UX/UI. <br/>
 
 [![Version](https://img.shields.io/cocoapods/v/IParallaxAndHapticEffect.svg?style=flat)](https://cocoapods.org/pods/IParallaxAndHapticEffect)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://cocoapods.org/pods/IParallaxAndHapticEffect)
@@ -43,7 +43,8 @@ The parallax effect can be applied to all objects inherited by 'UIView'. <br/>
 
 `UIView`, `UIImageView`, `UIButton`, `UIProgressView`, `UISlider`, `UISwitch`, `UIStepper`, `UITextField`, `UILabel`, `UITextView`, `UITableView`, `UICollectionView`, `PickerView`, `Etc` <br/>
 
-🪄 Adding imagination can create magical effects. 
+🪄 **Adding imagination can create magical effects.**
+ 
 <br/>
 <br/>
 <br/>
@@ -121,40 +122,40 @@ IHapticEffect.shared().setHaptic(type: '1')
 
 ### 2. 📍 Dynamic Haptic <a name="ihapticeffect-dynamic-haptic"></a>
 
-#### Repeat Haptic
+#### 2-1. Repeat Haptic
 This function generates **repetitive haptic events**. <br/>
  The number of iterations can be adjusted using the count parameter('2').
 ```swift
 IHapticEffect.shared().setRepeatHaptic(type: '1', count: '2')
 ```
 
-#### Delay Haptic
+#### 2-2. Delay Haptic
 This function generates a **delayed haptic event**. <br/>
  The delay time can be adjusted using the delay time parameter('2').
 ```swift
 IHapticEffect.shared().setDelayHaptic(type: '1', delayTime: '2')
 ```
 
-#### Custom Haptic
+#### 2-3. Custom Haptic
 This function generates a **customized haptic event**. <br/>
  The power can be adjusted using the power parameter between **0 and 1** (CGFloat: '1').
 ```swift
 IHapticEffect.shared().setCustomHaptic(power: '1')
 ```
 
-#### Presents with Haptic 1 
+#### 2-4. Presents with Haptic 1 
 Presents a view controller modally with **Normal Haptic (9 types)**.
 ```swift
 present(ViewController, animated: Bool, hapticType: '1', completion: '2')
 ```
 
-#### Presents with Haptic 2
+#### 2-5. Presents with Haptic 2
 Presents a view controller modally with **Delayed Haptic (9 types)**.
 ```swift
 present(ViewController, animated: Bool, hapticType: '1', delayTime: '2', completion: '3')
 ```
 
-#### Presents with Haptic 3
+#### 2-6. Presents with Haptic 3
 Presents a view controller modally with **Repeated Haptic (9 types)**.
 ```swift
 present(ViewController, animated: Bool, hapticType: '1', count: '2', completion: '3')
