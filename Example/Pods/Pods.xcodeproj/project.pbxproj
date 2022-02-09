@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		20BB8BEFCBFAA272A0A590C0417F1CF6 /* Pods-IParallaxAndHapticEffect_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EC921F3D6DDFABABDDB678AC8A22D26 /* Pods-IParallaxAndHapticEffect_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		50F3DA0CABE4EBE012413334C846B054 /* IParallaxAndHapticEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59010A149F0DC82E23657B72DD3CB43 /* IParallaxAndHapticEffect.swift */; };
+		2425366F27B3B13800895B28 /* IParallaxEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2425366E27B3B13800895B28 /* IParallaxEffect.swift */; };
+		2425367127B3B15900895B28 /* IHapticEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2425367027B3B15900895B28 /* IHapticEffect.swift */; };
+		2425367427B3B17F00895B28 /* UIViewController+IHaptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2425367327B3B17F00895B28 /* UIViewController+IHaptic.swift */; };
 		71CF115F1FC71FA8F9E6D8819628BF28 /* Pods-IParallaxAndHapticEffect_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB9ADBE90FCDC677D62DF2F859B4050 /* Pods-IParallaxAndHapticEffect_Tests-dummy.m */; };
 		BBDE76887F5C2C01748F66647E7714C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		ECE03E3434814F5AB52055F949D64950 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -31,6 +33,9 @@
 		1EC921F3D6DDFABABDDB678AC8A22D26 /* Pods-IParallaxAndHapticEffect_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IParallaxAndHapticEffect_Tests-umbrella.h"; sourceTree = "<group>"; };
 		2110D4C23B5A9C6FB5715DAA5209243C /* Pods-IParallaxAndHapticEffect_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IParallaxAndHapticEffect_Tests-Info.plist"; sourceTree = "<group>"; };
 		230A6255B229BF8C5B4DC572B516CE2B /* IParallaxAndHapticEffect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IParallaxAndHapticEffect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2425366E27B3B13800895B28 /* IParallaxEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IParallaxEffect.swift; sourceTree = "<group>"; };
+		2425367027B3B15900895B28 /* IHapticEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IHapticEffect.swift; sourceTree = "<group>"; };
+		2425367327B3B17F00895B28 /* UIViewController+IHaptic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+IHaptic.swift"; sourceTree = "<group>"; };
 		59124D690660F2EBA7B21FFD2313C2D1 /* Pods-IParallaxAndHapticEffect_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-IParallaxAndHapticEffect_Tests"; path = Pods_IParallaxAndHapticEffect_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69887DF5D0C2FA630C724358C0679B4C /* IParallaxAndHapticEffect.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = IParallaxAndHapticEffect.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		7099A2DC1E8EAEDC7B21130CACE0867C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -50,7 +55,6 @@
 		EC5705BC90174B9EEFE581F1F3CBE958 /* Pods-IParallaxAndHapticEffect_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IParallaxAndHapticEffect_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EFB9ADBE90FCDC677D62DF2F859B4050 /* Pods-IParallaxAndHapticEffect_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IParallaxAndHapticEffect_Tests-dummy.m"; sourceTree = "<group>"; };
 		F482920D528EB88F6A5AD1B8DDA82C2B /* IParallaxAndHapticEffect-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IParallaxAndHapticEffect-prefix.pch"; sourceTree = "<group>"; };
-		F59010A149F0DC82E23657B72DD3CB43 /* IParallaxAndHapticEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IParallaxAndHapticEffect.swift; path = IParallaxAndHapticEffect/Classes/IParallaxAndHapticEffect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,14 @@
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/IParallaxAndHapticEffect";
+			sourceTree = "<group>";
+		};
+		2425367227B3B16100895B28 /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+				2425367327B3B17F00895B28 /* UIViewController+IHaptic.swift */,
+			);
+			path = Extenstions;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -170,7 +182,9 @@
 		F79C2F1C3C20D4B09757741FA3EBA6E9 /* IParallaxAndHapticEffect */ = {
 			isa = PBXGroup;
 			children = (
-				F59010A149F0DC82E23657B72DD3CB43 /* IParallaxAndHapticEffect.swift */,
+				2425367227B3B16100895B28 /* Extenstions */,
+				2425367027B3B15900895B28 /* IHapticEffect.swift */,
+				2425366E27B3B13800895B28 /* IParallaxEffect.swift */,
 				F46305D580692AEE6ED848B70514E763 /* Pod */,
 				0FC68CB7C7B075559A318212591A5B4D /* Support Files */,
 			);
@@ -288,7 +302,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F282C8B85B29F28E290464BAFE114899 /* IParallaxAndHapticEffect-dummy.m in Sources */,
-				50F3DA0CABE4EBE012413334C846B054 /* IParallaxAndHapticEffect.swift in Sources */,
+				2425367127B3B15900895B28 /* IHapticEffect.swift in Sources */,
+				2425366F27B3B13800895B28 /* IParallaxEffect.swift in Sources */,
+				2425367427B3B17F00895B28 /* UIViewController+IHaptic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

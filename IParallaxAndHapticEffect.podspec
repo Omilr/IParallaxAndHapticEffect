@@ -24,5 +24,5 @@ It is easy to create an interactive UX/UI with excellent performance.
   s.ios.deployment_target = '13.0'
   s.swift_version = '5.0'
   s.frameworks = 'UIKit'
-  s.source_files = 'IParallaxAndHapticEffect/Classes/**/*'
+  s.source_files = 'IParallaxAndHapticEffect/Core/**/*'
 end
