@@ -1,0 +1,6 @@
+use_frameworks!
+target 'IParallaxAndHapticEffect_Tests' do
+  pod 'IParallaxAndHapticEffect', :path => '../'
+  
+  
+end
