@@ -74,7 +74,7 @@ IParallaxEffect.shared().setParallax(view: ['1'], axis: ['2'], power: '3')
 | `.multi` |
 
 #### Parameter '3'
-You can enter the intensity you want to use. (1 ~ 1000)
+You can enter the intensity you want to use. (1 ~ 1000) <br/>
 Here's the recommended intensity!
 | Power | - |
 | -------- | ---- |
@@ -91,12 +91,12 @@ Here's the recommended intensity!
 ---
 
 ## 🚀 How to use IHapticEffect <a name="how-to-use-ihaptic"></a>
-IHapticEffect basically provides all nine forms of system vibration. <br/>
+`IHapticEffect` basically provides all nine forms of system vibration. <br/>
 Additionally, try other excellent vibration functions.
 
-<br/>
 
 ### 1. 📍 IHapticEffect <a name="ihapticeffect"></a>
+`IHapticEffect`, that's all. <br/>
 Create a vibration with a simple line. <br/>
 This function generates haptic events of 9 types.
 
@@ -122,54 +122,54 @@ IHapticEffect.shared().setHaptic(type: '1')
 ### 2. 📍 Dynamic Haptic <a name="ihapticeffect-dynamic-haptic"></a>
 
 #### Repeat Haptic
-This function generates repetitive haptic events. <br/>
+This function generates **repetitive haptic events**. <br/>
  The number of iterations can be adjusted using the count parameter('2').
 ```swift
 IHapticEffect.shared().setRepeatHaptic(type: '1', count: '2')
 ```
 
 #### Delay Haptic
-This function generates a delayed haptic event. <br/>
+This function generates a **delayed haptic event**. <br/>
  The delay time can be adjusted using the delay time parameter('2').
 ```swift
 IHapticEffect.shared().setDelayHaptic(type: '1', delayTime: '2')
 ```
 
 #### Custom Haptic
-This function generates a customized haptic event. <br/>
- The power can be adjusted using the power parameter between 0 and 1 (CGFloat: '1').
+This function generates a **customized haptic event**. <br/>
+ The power can be adjusted using the power parameter between **0 and 1** (CGFloat: '1').
 ```swift
 IHapticEffect.shared().setCustomHaptic(power: '1')
 ```
 
 #### Presents with Haptic 1 
-Presents a view controller modally with Normal Haptic (9 types).
+Presents a view controller modally with **Normal Haptic (9 types)**.
 ```swift
 present(ViewController, animated: Bool, hapticType: '1', completion: '2')
 ```
 
 #### Presents with Haptic 2
-Presents a view controller modally with Delayed Haptic (9 types).
+Presents a view controller modally with **Delayed Haptic (9 types)**.
 ```swift
 present(ViewController, animated: Bool, hapticType: '1', delayTime: '2', completion: '3')
 ```
 
 #### Presents with Haptic 3
-Presents a view controller modally with Repeated Haptic (9 types).
+Presents a view controller modally with **Repeated Haptic (9 types)**.
 ```swift
 present(ViewController, animated: Bool, hapticType: '1', count: '2', completion: '3')
 ```
 
 #### Presents with Haptic(Example)
-Alert
+**Alert**
 ```swift
 let alertVC = UIAlertController(title: "Notice", message: "IParallaxAndHapticEffect", preferredStyle: .alert)
 let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
 alertVC.addAction(okAction)
 present(alertVC, animated: true, hapticType: .heavy, count: 2, completion: nil)
 ```
-<br/>
-Present
+
+**Present**
 ```swift
 guard let vc = self.storyboard?.instantiateViewController(withIdentifier: VC2.identifier) as? VC2 else { return }
 present(vc, animated: true, hapticType: .soft)
