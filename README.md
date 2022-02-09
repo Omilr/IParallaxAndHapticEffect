@@ -16,10 +16,10 @@ It is easy to create high-performance interactive UX/UI.
 
 # Table of contents
 * [🚀 How to use IParallaxEffect](#how-to-use-iparallax)
-    0. [📍 IParallaxEffect : One line is everything](#one-line-is-everything)
+    1. [📍 IParallaxEffect : One line is everything](#one-line-is-everything)
 * [🚀 How to use IHapticEffect](#how-to-use-ihaptic)
-    0. [📍 IHapticEffect](#ihapticeffect)
-    1. [📍 Dynamic Haptic](#ihapticeffect-dynamic-haptic)
+    1. [📍 IHapticEffect](#ihapticeffect)
+    2. [📍 Dynamic Haptic](#ihapticeffect-dynamic-haptic)
 * [🛠 Installation](#installation)
 * [⚠️ Important](#important)
 * [Contributing](#contributing)
@@ -39,10 +39,13 @@ Each use is very easy.<br/>
 First, let's look at 3 cases of using the parallax effect. Then think about how to use it for UI/UX later.
 
 <br/>
-The parallax effect can be applied to all objects inherited by 'UIView'.
-`UIView`, `UIImageView`, `UIButton`, `UIProgressView`, `UISlider`, `UISwitch`, `UIStepper`, `UITextField`, `UILabel`, `UITextView`, `UITableView`, `UICollectionView`, `PickerView`, `Etc`
-🪄 Adding imagination can create magical effects. 
+The parallax effect can be applied to all objects inherited by 'UIView'. <br/>
 
+`UIView`, `UIImageView`, `UIButton`, `UIProgressView`, `UISlider`, `UISwitch`, `UIStepper`, `UITextField`, `UILabel`, `UITextView`, `UITableView`, `UICollectionView`, `PickerView`, `Etc` <br/>
+
+🪄 Adding imagination can create magical effects. 
+<br/>
+<br/>
 <br/>
 
 | Examples |
@@ -53,15 +56,15 @@ The parallax effect can be applied to all objects inherited by 'UIView'.
 
 <br/>
 
-### 0. 📍 IParallaxEffect : One line is everything. <a name="one-line-is-everything"></a>
-'IParallaxEffect', that's all. <br/>
-This function generates a 'customized parallax effect' on the 'UIView' object. View objects can be added using the array sequence parameter. The power can be adjusted using the power parameter.
+### 1. 📍 IParallaxEffect : One line is everything. <a name="one-line-is-everything"></a>
+`IParallaxEffect`, that's all. <br/>
+This function generates a 'customized parallax effect' on the 'UIView' object. View objects can be added using the array sequence parameter. The power can be adjusted using the power parameter.
 
 ```swift
 IParallaxEffect.shared().setParallax(view: ['1'], axis: ['2'], power: '3')
 ```
 
-Parameter '1' view: Your view that wants to apply the effect.
+#### Parameter '1' view: Your view that wants to apply the effect.
 
 #### Parameter '2'
 | axis |
@@ -69,8 +72,6 @@ Parameter '1' view: Your view that wants to apply the effect.
 | `.horizontal` |
 | `.vertical` |
 | `.multi` |
-
-<br/>
 
 #### Parameter '3'
 You can enter the intensity you want to use. (1 ~ 1000)
@@ -87,14 +88,16 @@ Here's the recommended intensity!
 <br/>
 <br/>
 
+---
+
 ## 🚀 How to use IHapticEffect <a name="how-to-use-ihaptic"></a>
-IHapticEffect basically provides all nine forms of system vibration.
+IHapticEffect basically provides all nine forms of system vibration. <br/>
 Additionally, try other excellent vibration functions.
 
 <br/>
 
-### 0. 📍 IHapticEffect <a name="ihapticeffect"></a>
-Create a vibration with a simple line.
+### 1. 📍 IHapticEffect <a name="ihapticeffect"></a>
+Create a vibration with a simple line. <br/>
 This function generates haptic events of 9 types.
 
 ```swift
@@ -116,22 +119,25 @@ IHapticEffect.shared().setHaptic(type: '1')
 
 <br/>
 
-### 1. 📍 Dynamic Haptic <a name="ihapticeffect-dynamic-haptic"></a>
+### 2. 📍 Dynamic Haptic <a name="ihapticeffect-dynamic-haptic"></a>
 
 #### Repeat Haptic
-This function generates repetitive haptic events. The number of iterations can be adjusted using the count parameter('2').
+This function generates repetitive haptic events. <br/>
+ The number of iterations can be adjusted using the count parameter('2').
 ```swift
 IHapticEffect.shared().setRepeatHaptic(type: '1', count: '2')
 ```
 
 #### Delay Haptic
-This function generates a delayed haptic event. The delay time can be adjusted using the delay time parameter('2').
+This function generates a delayed haptic event. <br/>
+ The delay time can be adjusted using the delay time parameter('2').
 ```swift
 IHapticEffect.shared().setDelayHaptic(type: '1', delayTime: '2')
 ```
 
 #### Custom Haptic
-This function generates a customized haptic event. The power can be adjusted using the power parameter between 0 and 1 (CGFloat: '1').
+This function generates a customized haptic event. <br/>
+ The power can be adjusted using the power parameter between 0 and 1 (CGFloat: '1').
 ```swift
 IHapticEffect.shared().setCustomHaptic(power: '1')
 ```
@@ -155,13 +161,15 @@ present(ViewController, animated: Bool, hapticType: '1', count: '2', completion:
 ```
 
 #### Presents with Haptic(Example)
+Alert
 ```swift
 let alertVC = UIAlertController(title: "Notice", message: "IParallaxAndHapticEffect", preferredStyle: .alert)
 let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
 alertVC.addAction(okAction)
 present(alertVC, animated: true, hapticType: .heavy, count: 2, completion: nil)
 ```
- 
+<br/>
+Present
 ```swift
 guard let vc = self.storyboard?.instantiateViewController(withIdentifier: VC2.identifier) as? VC2 else { return }
 present(vc, animated: true, hapticType: .soft)
@@ -182,22 +190,17 @@ pod 'IParallaxAndHapticEffect'
 <br/>
 
 ## ⚠️ Important <a name="important"></a>
-The Parallax & Haptic effect does not work in the simulator. Therefore, it is recommended to test on a real device.
+The Parallax & Haptic effect does not work in the simulator. <br/>
+Therefore, it is recommended to test on a real device.
 
-
-<br/>
 
 ## Contributing <a name="contributing"></a>
 Contributions are always welcome 🎉
 
-<br/>
 
 ## Author <a name="author"></a>
-
 Omilr, leo.algodev@gmail.com
 
-<br/>
 
 ## License <a name="license"></a>
-
 IParallaxAndHapticEffect is available under the MIT license. See the LICENSE file for more info.
