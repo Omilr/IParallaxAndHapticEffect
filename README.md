@@ -3,8 +3,7 @@
 # IParallaxAndHapticEffect
 ✨ Super easy Parallax and Haptic Effect. <br/>
 This library helps you easily use the 'Parallax' and 'Haptic' effects. <br/>
-Customized 3D parallax and haptic effects are provided. <br/>
-It is easy to create high-performance interactive UX/UI. <br/>
+Customized 3D parallax and haptic effects are provided(High-performance interactive UX/UI). <br/>
 
 [![Version](https://img.shields.io/cocoapods/v/IParallaxAndHapticEffect.svg?style=flat)](https://cocoapods.org/pods/IParallaxAndHapticEffect)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://cocoapods.org/pods/IParallaxAndHapticEffect)
@@ -80,16 +79,17 @@ Here's the recommended intensity!
 | Power | - |
 | -------- | ---- |
 | `30` | very slow | 
-| `60` | rater slow |
+| `60` | slow |
 | `90` | medium |
 | `120` | fast |
-| `150` | lively |
-| `180~` | quite fast |
+| `150` | very fast |
+| `180~` | SpaceX |
 
-<br/>
 <br/>
 
 ---
+
+<br/>
 
 ## 🚀 How to use IHapticEffect <a name="how-to-use-ihaptic"></a>
 `IHapticEffect` basically provides all nine forms of system vibration. <br/>
