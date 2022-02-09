@@ -1,0 +1,78 @@
+client:
+  name: basic
+tools: {}
+targets:
+  "IParallaxAndHapticEffect-debug.module": ["<IParallaxAndHapticEffect-debug.module>"]
+  "IParallaxAndHapticEffectPackageTests-debug.test": ["<IParallaxAndHapticEffectPackageTests-debug.test>"]
+  "IParallaxAndHapticEffectTests-debug.module": ["<IParallaxAndHapticEffectTests-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<IParallaxAndHapticEffect-debug.module>"]
+  "test": ["<IParallaxAndHapticEffect-debug.module>","<IParallaxAndHapticEffectPackageTests-debug.test>","<IParallaxAndHapticEffectTests-debug.module>"]
+default: "main"
+nodes:
+  "/Users/leoyang/Desktop/IParallaxAndHapticEffect/Sources/IParallaxAndHapticEffect/":
+    is-directory-structure: true
+  "/Users/leoyang/Desktop/IParallaxAndHapticEffect/Tests/IParallaxAndHapticEffectTests/":
+    is-directory-structure: true
+commands:
+  "<IParallaxAndHapticEffect-debug.module>":
+    tool: phony
+    inputs: ["/Users/leoyang/Desktop/IParallaxAndHapticEffect/.build/x86_64-apple-macosx/debug/IParallaxAndHapticEffect.build/IParallaxAndHapticEffect.swift.o","/Users/leoyang/Desktop/IParallaxAndHapticEffect/.build/x86_64-apple-macosx/debug/IParallaxAndHapticEffect.swiftmodule"]
+    outputs: ["<IParallaxAndHapticEffect-debug.module>"]
+
+  "<IParallaxAndHapticEffectPackageTests-debug.test>":
+    tool: phony
+    inputs: ["/Users/leoyang/Desktop/IParallaxAndHapticEffect/.build/x86_64-apple-macosx/debug/IParallaxAndHapticEffectPackageTests.xctest/Contents/MacOS/IParallaxAndHapticEffectPackageTests"]
+    outputs: ["<IParallaxAndHapticEffectPackageTests-debug.test>"]
+
+  "<IParallaxAndHapticEffectTests-debug.module>":
+    tool: phony
+    inputs: ["/Users/leoyang/Desktop/IParallaxAndHapticEffect/.build/x86_64-apple-macosx/debug/IParallaxAndHapticEffectTests.build/IParallaxAndHapticEffectTests.swift.o","/Users/leoyang/Desktop/IParallaxAndHapticEffect/.build/x86_64-apple-macosx/debug/IParallaxAndHapticEffectTests.swiftmodule"]
+    outputs: ["<IParallaxAndHapticEffectTests-debug.module>"]
+
+  "C.IParallaxAndHapticEffect-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/leoyang/Desktop/IParallaxAndHapticEffect/Sources/IParallaxAndHapticEffect/IParallaxAndHapticEffect.swift"]
+    outputs: ["/Users/leoyang/Desktop/IParallaxAndHapticEffect/.build/x86_64-apple-macosx/debug/IParallaxAndHapticEffect.build/IParallaxAndHapticEffect.swift.o","/Users/leoyang/Desktop/IParallaxAndHapticEffect/.build/x86_64-apple-macosx/debug/IParallaxAndHapticEffect.swiftmodule"]
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "IParallaxAndHapticEffect"
+    module-output-path: "/Users/leoyang/Desktop/IParallaxAndHapticEffect/.build/x86_64-apple-macosx/debug/IParallaxAndHapticEffect.swiftmodule"
+    import-paths: ["/Users/leoyang/Desktop/IParallaxAndHapticEffect/.build/x86_64-apple-macosx/debug"]
+    temps-path: "/Users/leoyang/Desktop/IParallaxAndHapticEffect/.build/x86_64-apple-macosx/debug/IParallaxAndHapticEffect.build"
+    objects: ["/Users/leoyang/Desktop/IParallaxAndHapticEffect/.build/x86_64-apple-macosx/debug/IParallaxAndHapticEffect.build/IParallaxAndHapticEffect.swift.o"]
+    other-args: ["-target","x86_64-apple-macosx10.10","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/leoyang/Desktop/IParallaxAndHapticEffect/.build/x86_64-apple-macosx/debug/index/store","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-Onone","-enable-testing","-g","-j4","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/leoyang/Desktop/IParallaxAndHapticEffect/.build/x86_64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/leoyang/Desktop/IParallaxAndHapticEffect/.build/x86_64-apple-macosx/debug/IParallaxAndHapticEffect.build/IParallaxAndHapticEffect-Swift.h","-color-diagnostics"]
+    sources: ["/Users/leoyang/Desktop/IParallaxAndHapticEffect/Sources/IParallaxAndHapticEffect/IParallaxAndHapticEffect.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 4
+
+  "C.IParallaxAndHapticEffectPackageTests-debug.test":
+    tool: shell
+    inputs: ["/Users/leoyang/Desktop/IParallaxAndHapticEffect/.build/x86_64-apple-macosx/debug/IParallaxAndHapticEffect.build/IParallaxAndHapticEffect.swift.o","/Users/leoyang/Desktop/IParallaxAndHapticEffect/.build/x86_64-apple-macosx/debug/IParallaxAndHapticEffectTests.build/IParallaxAndHapticEffectTests.swift.o"]
+    outputs: ["/Users/leoyang/Desktop/IParallaxAndHapticEffect/.build/x86_64-apple-macosx/debug/IParallaxAndHapticEffectPackageTests.xctest/Contents/MacOS/IParallaxAndHapticEffectPackageTests"]
+    description: "Linking ./.build/x86_64-apple-macosx/debug/IParallaxAndHapticEffectPackageTests.xctest/Contents/MacOS/IParallaxAndHapticEffectPackageTests"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Users/leoyang/Desktop/IParallaxAndHapticEffect/.build/x86_64-apple-macosx/debug","-o","/Users/leoyang/Desktop/IParallaxAndHapticEffect/.build/x86_64-apple-macosx/debug/IParallaxAndHapticEffectPackageTests.xctest/Contents/MacOS/IParallaxAndHapticEffectPackageTests","-module-name","IParallaxAndHapticEffectPackageTests","-Xlinker","-bundle","-Xlinker","-rpath","-Xlinker","@loader_path/../../../","@/Users/leoyang/Desktop/IParallaxAndHapticEffect/.build/x86_64-apple-macosx/debug/IParallaxAndHapticEffectPackageTests.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-5.5/macosx","-target","x86_64-apple-macosx11.0","-Xlinker","-add_ast_path","-Xlinker","/Users/leoyang/Desktop/IParallaxAndHapticEffect/.build/x86_64-apple-macosx/debug/IParallaxAndHapticEffect.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/leoyang/Desktop/IParallaxAndHapticEffect/.build/x86_64-apple-macosx/debug/IParallaxAndHapticEffectTests.swiftmodule","-L","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib"]
+
+  "C.IParallaxAndHapticEffectTests-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/leoyang/Desktop/IParallaxAndHapticEffect/Tests/IParallaxAndHapticEffectTests/IParallaxAndHapticEffectTests.swift","/Users/leoyang/Desktop/IParallaxAndHapticEffect/.build/x86_64-apple-macosx/debug/IParallaxAndHapticEffect.swiftmodule"]
+    outputs: ["/Users/leoyang/Desktop/IParallaxAndHapticEffect/.build/x86_64-apple-macosx/debug/IParallaxAndHapticEffectTests.build/IParallaxAndHapticEffectTests.swift.o","/Users/leoyang/Desktop/IParallaxAndHapticEffect/.build/x86_64-apple-macosx/debug/IParallaxAndHapticEffectTests.swiftmodule"]
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "IParallaxAndHapticEffectTests"
+    module-output-path: "/Users/leoyang/Desktop/IParallaxAndHapticEffect/.build/x86_64-apple-macosx/debug/IParallaxAndHapticEffectTests.swiftmodule"
+    import-paths: ["/Users/leoyang/Desktop/IParallaxAndHapticEffect/.build/x86_64-apple-macosx/debug"]
+    temps-path: "/Users/leoyang/Desktop/IParallaxAndHapticEffect/.build/x86_64-apple-macosx/debug/IParallaxAndHapticEffectTests.build"
+    objects: ["/Users/leoyang/Desktop/IParallaxAndHapticEffect/.build/x86_64-apple-macosx/debug/IParallaxAndHapticEffectTests.build/IParallaxAndHapticEffectTests.swift.o"]
+    other-args: ["-target","x86_64-apple-macosx11.0","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/leoyang/Desktop/IParallaxAndHapticEffect/.build/x86_64-apple-macosx/debug/index/store","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-Onone","-enable-testing","-g","-j4","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/leoyang/Desktop/IParallaxAndHapticEffect/.build/x86_64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-color-diagnostics"]
+    sources: ["/Users/leoyang/Desktop/IParallaxAndHapticEffect/Tests/IParallaxAndHapticEffectTests/IParallaxAndHapticEffectTests.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 4
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/leoyang/Desktop/IParallaxAndHapticEffect/Sources/IParallaxAndHapticEffect/","/Users/leoyang/Desktop/IParallaxAndHapticEffect/Tests/IParallaxAndHapticEffectTests/","/Users/leoyang/Desktop/IParallaxAndHapticEffect/Package.swift","/Users/leoyang/Desktop/IParallaxAndHapticEffect/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

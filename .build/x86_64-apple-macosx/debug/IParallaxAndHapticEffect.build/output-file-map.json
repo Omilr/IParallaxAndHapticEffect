@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/leoyang/Desktop/IParallaxAndHapticEffect/.build/x86_64-apple-macosx/debug/IParallaxAndHapticEffect.build/master.swiftdeps"
+  },
+  "/Users/leoyang/Desktop/IParallaxAndHapticEffect/Sources/IParallaxAndHapticEffect/IParallaxAndHapticEffect.swift": {
+    "dependencies": "/Users/leoyang/Desktop/IParallaxAndHapticEffect/.build/x86_64-apple-macosx/debug/IParallaxAndHapticEffect.build/IParallaxAndHapticEffect.d",
+    "object": "/Users/leoyang/Desktop/IParallaxAndHapticEffect/.build/x86_64-apple-macosx/debug/IParallaxAndHapticEffect.build/IParallaxAndHapticEffect.swift.o",
+    "swiftmodule": "/Users/leoyang/Desktop/IParallaxAndHapticEffect/.build/x86_64-apple-macosx/debug/IParallaxAndHapticEffect.build/IParallaxAndHapticEffect~partial.swiftmodule",
+    "swift-dependencies": "/Users/leoyang/Desktop/IParallaxAndHapticEffect/.build/x86_64-apple-macosx/debug/IParallaxAndHapticEffect.build/IParallaxAndHapticEffect.swiftdeps"
+  }
+}
