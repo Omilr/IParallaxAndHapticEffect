@@ -1,0 +1,16 @@
+PODS:
+  - IParallaxAndHapticEffect (0.1.0)
+
+DEPENDENCIES:
+  - IParallaxAndHapticEffect (from `../`)
+
+EXTERNAL SOURCES:
+  IParallaxAndHapticEffect:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  IParallaxAndHapticEffect: f5cf7fe84b2b60e20e42b58a94ae8e4f0c932d06
+
+PODFILE CHECKSUM: 471f25b672fde88db07c45fa4ec254664afe82d1
+
+COCOAPODS: 1.11.2

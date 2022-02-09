@@ -9,34 +9,20 @@
 Pod::Spec.new do |s|
   s.name             = 'IParallaxAndHapticEffect'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of IParallaxAndHapticEffect.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
+  s.summary          = '✨ Super easy Parallax and Haptic Effect.'
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+
+✨ This library can be used for easy use of 'Parallax' and 'Haptic' effects.
+Custom 3D Parallax and Haptic effect are provided.
+It is easy to create an interactive UX/UI with excellent performance.
                        DESC
 
   s.homepage         = 'https://github.com/Omilr/IParallaxAndHapticEffect'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Omilr' => 'str2ow@naver.com' }
+  s.author           = { 'Omilr' => 'leo.algodev@gmail.com' }
   s.source           = { :git => 'https://github.com/Omilr/IParallaxAndHapticEffect.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '9.0'
-
+  s.ios.deployment_target = '13.0'
+  s.swift_version = '5.0'
+  s.frameworks = 'UIKit'
   s.source_files = 'IParallaxAndHapticEffect/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'IParallaxAndHapticEffect' => ['IParallaxAndHapticEffect/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

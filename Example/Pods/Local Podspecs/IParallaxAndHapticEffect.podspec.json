@@ -1,0 +1,22 @@
+{
+  "name": "IParallaxAndHapticEffect",
+  "version": "0.1.0",
+  "summary": "A short description of IParallaxAndHapticEffect.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Omilr/IParallaxAndHapticEffect",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Omilr": "str2ow@naver.com"
+  },
+  "source": {
+    "git": "https://github.com/Omilr/IParallaxAndHapticEffect.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "IParallaxAndHapticEffect/Classes/**/*"
+}
