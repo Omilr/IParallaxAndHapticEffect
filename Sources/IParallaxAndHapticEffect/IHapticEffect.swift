@@ -173,7 +173,7 @@ public final class IHapticEffect: NSObject {
         DispatchQueue.main.async {
             let generater = UINotificationFeedbackGenerator()
             generater.prepare()
-            generater.notificationOccurred(.warning)
+            generater.notificationOccurred(.success)
         }
     }
     
@@ -183,7 +183,7 @@ public final class IHapticEffect: NSObject {
         DispatchQueue.main.async {
             let generater = UINotificationFeedbackGenerator()
             generater.prepare()
-            generater.notificationOccurred(.warning)
+            generater.notificationOccurred(.error)
         }
     }
 }

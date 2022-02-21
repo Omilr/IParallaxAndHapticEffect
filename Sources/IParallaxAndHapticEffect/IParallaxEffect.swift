@@ -59,7 +59,7 @@ public final class IParallaxEffect: NSObject {
             let horizontal = UIInterpolatingMotionEffect(keyPath: keyPath.centerX, type: .tiltAlongHorizontalAxis)
             horizontal.maximumRelativeValue = power
             horizontal.minimumRelativeValue = -power
-            view.forEach { $0.addMotionEffect(horizontal)}
+            view.forEach { $0.addMotionEffect(horizontal) }
         }
     }
     
