@@ -9,6 +9,7 @@ import UIKit
 
 
 extension UIViewController {
+    @available(iOS 13.0, *)
     /** Presents a view controller modally with Normal Haptic (9 types). */
     public func present(_ presentedViewController: UIViewController, animated flag: Bool, hapticType: HapticType, completion: (() -> Void)? = nil) {
         present(presentedViewController, animated: flag, completion: completion)
