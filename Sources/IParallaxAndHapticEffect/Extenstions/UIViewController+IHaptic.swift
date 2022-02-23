@@ -16,12 +16,14 @@ extension UIViewController {
         IHapticEffect.shared().setHaptic(type: hapticType)
     }
     
+    @available(iOS 13.0, *)
     /** Presents a view controller modally with Delayed Haptic  (9 types). */
     public func present(_ presentedViewController: UIViewController, animated flag: Bool, hapticType: HapticType, delayTime: CGFloat, completion: (() -> Void)? = nil) {
         present(presentedViewController, animated: flag, completion: completion)
         IHapticEffect.shared().setDelayHaptic(type: hapticType, delayTime: delayTime)
     }
     
+    @available(iOS 13.0, *)
     /** Presents a view controller modally with Repeated Haptic (9 types).  */
     public func present(_ presentedViewController: UIViewController, animated flag: Bool, hapticType: HapticType, count: Int, completion: (() -> Void)? = nil) {
         present(presentedViewController, animated: flag, completion: completion)
