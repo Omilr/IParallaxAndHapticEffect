@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IParallaxAndHapticEffect'
-  s.version          = '0.6.0'
+  s.version          = '0.6.1'
   s.summary          = '✨ Super easy Parallax and Haptic Effect.'
   s.description      = <<-DESC
 
